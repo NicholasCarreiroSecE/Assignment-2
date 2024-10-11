@@ -1,11 +1,14 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
+/* Global styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Body styles */
 body {
     margin: 0;
     background: white;
@@ -14,36 +17,43 @@ body {
     padding: 20px;
 }
 
+/* Container styles */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Logo styles */
 .container .logo {
     color: #11270B;
 }
 
+/* Clearfix for header */
 header::after {
     content: '';
     display: table;
     clear: both;
 }
 
+/* Logo positioning */
 .logo {
     float: left;
     padding: 10px 0;
 }
 
+/* Navigation styles */
 nav {
     float: right;
 }
 
+/* Navigation list styles */
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Navigation list item styles */
 nav li {
     display: inline-block;
     margin-left: 70px;
@@ -51,6 +61,7 @@ nav li {
     position: relative;
 }
 
+/* Navigation link styles */
 nav a {
     color: #11270B;
     text-decoration: none;
@@ -58,10 +69,12 @@ nav a {
     font-size: 14px;
 }
 
+/* Navigation link hover effect */
 nav a:hover {
     color: #000000;
 }
 
+/* Navigation link underline effect */
 nav a::before {
     content: '';
     display: block;
@@ -73,10 +86,12 @@ nav a::before {
     transition: all ease-in-out 250ms;
 }
 
+/* Navigation link underline hover effect */
 nav a:hover::before {
     width: 100%;
 }
 
+/* First header section styles */
 .firstheader {
     height: 400px;
     background: url('furnitureimage.jpg') center/cover no-repeat;
@@ -87,15 +102,18 @@ nav a:hover::before {
     text-align: center;
 }
 
+/* First header title styles */
 .firstheader h1 {
     font-size: 48px;
 }
 
+/* First header paragraph styles */
 .firstheader p {
     font-size: 20px;
     margin: 20px 0;
 }
 
+/* First header button styles */
 .firstheader .btn {
     padding: 10px 20px;
     background-color: #11270B;
@@ -104,6 +122,7 @@ nav a:hover::before {
     border-radius: 5px;
 }
 
+/* Categories section styles */
 .categories {
     padding: 50px;
     text-align: center;
@@ -111,27 +130,31 @@ nav a:hover::before {
     color: #11270B;
 }
 
+/* Category grid styles */
 .category-grid {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
 
+/* Category item styles */
 .category-item {
     width: 30%;
 }
 
+/* Category item image styles */
 .category-item img {
     width: 80%;
     height: 60%;
-
 }
 
+/* Category item title styles */
 .category-item h3 {
     margin: 15px 0;
     color: #11270B;
 }
 
+/* Category item button styles */
 .category-item .btn {
     padding: 10px 15px;
     background-color: #11270B;
@@ -140,40 +163,47 @@ nav a:hover::before {
     border-radius: 5px;
 }
 
+/* Shipping card styles */
 .shipping-card {
     background-color: #FEFADC;
 }
 
+/* Shipping card title styles */
 .shipping-card h2 {
     color: #11270B;
     text-align: center;
     padding: 20px 0;
 }
 
+/* Shipping card paragraph styles */
 .shipping-card p {
     color: #11270B;
     text-align: center;
     padding: 20px 0;
 }
 
+/* Shipping card link styles */
 .shipping-card a {
     color: #11270B;
     text-decoration: none;
     font-size: 14px;
 }
 
+/* Testimonials section styles */
 .testimonials {
     background-color: #FEFADC;
     padding: 50px;
     text-align: center;
 }
 
+/* Testimonial grid styles */
 .testimonial-grid {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
 
+/* Testimonial item styles */
 .testimonial-item {
     width: 30%;
     padding: 20px;
@@ -181,34 +211,41 @@ nav a:hover::before {
     border-radius: 5px;
 }
 
+/* Testimonial item title styles */
 .testimonial-item h4 {
     font-style: italic;
     color: white;
 }
 
+/* Testimonial item paragraph styles */
 .testimonial-item p {
     color: white;
 }
 
+/* Footer row styles */
 .footer .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Footer column list styles */
 .column ul {
     list-style: none;
 }
 
+/* Footer styles */
 .footer {
     background-color: #FEFADC;
     padding: 70px 0;
 }
 
+/* Footer column styles */
 .column {
     width: 25%;
     padding: 0 15px;
 }
 
+/* Footer column title styles */
 .column h4 {
     font-size: 18px;
     color: #11270B;
@@ -218,10 +255,12 @@ nav a:hover::before {
     position: relative;
 }
 
+/* Footer column list item styles */
 .column ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
+/* Footer column link styles */
 .column ul li a {
     font-size: 16px;
     color: #11270B;
@@ -231,19 +270,21 @@ nav a:hover::before {
     transition: all 0.3s ease;
 }
 
+/* Footer column link hover effect */
 .column ul li a:hover {
     color: grey;
     padding-left: 8px;
 }
+
+/* Footer column list item styles */
 .column li {
     font-size: 16px;
     color: #11270B;
     text-decoration: none;
     font-weight: 300;
 }
-/* Media Queries for responsiveness */
 
-/* Small devices (phones, 600px and down) */
+/* Media queries for small screens */
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
@@ -304,7 +345,7 @@ nav a:hover::before {
     }
 }
 
-/* Medium devices (tablets, 600px to 768px) */
+/* Media queries for medium screens */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .container {
         width: 90%;
@@ -323,7 +364,7 @@ nav a:hover::before {
     }
 }
 
-/* Large devices (desktops, 768px and up) */
+/* Media queries for large screens */
 @media only screen and (min-width: 768px) {
     .container {
         width: 80%;
