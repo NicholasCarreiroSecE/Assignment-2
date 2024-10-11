@@ -5,9 +5,10 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 0;
-    background: #FEFADC;
+    background: white;
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     padding: 20px;
@@ -47,7 +48,6 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
-
     position: relative;
 }
 
@@ -67,17 +67,16 @@ nav a::before {
     display: block;
     height: 5px;
     background-color: #11270B;
-
     position: absolute;
     top: 0;
     width: 0%;
-
     transition: all ease-in-out 250ms;
 }
 
 nav a:hover::before {
     width: 100%;
 }
+
 .firstheader {
     height: 400px;
     background: url('furnitureimage.jpg') center/cover no-repeat;
@@ -104,6 +103,7 @@ nav a:hover::before {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .categories {
     padding: 50px;
     text-align: center;
@@ -138,4 +138,54 @@ nav a:hover::before {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.shipping-card {
+    background-color: #FEFADC;
+}
+
+.shipping-card h2 {
+    color: #11270B;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.shipping-card p {
+    color: #11270B;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.shipping-card a {
+    color: #11270B;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.testimonials {
+    background-color: #FEFADC;
+    padding: 50px;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.testimonial-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #11270B;
+    border-radius: 5px;
+}
+
+.testimonial-item h4 {
+    font-style: italic;
+    color: white;
+}
+
+.testimonial-item p {
+    color: white;
 }
