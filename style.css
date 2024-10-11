@@ -189,3 +189,155 @@ nav a:hover::before {
 .testimonial-item p {
     color: white;
 }
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #FEFADC;
+    padding: 70px 0;
+}
+
+.column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.column h4 {
+    font-size: 18px;
+    color: #11270B;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.column ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.column ul li a {
+    font-size: 16px;
+    color: #11270B;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: grey;
+    padding-left: 8px;
+}
+.column li {
+    font-size: 16px;
+    color: #11270B;
+    text-decoration: none;
+    font-weight: 300;
+}
+/* Media Queries for responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .firstheader {
+        height: 300px;
+        padding: 20px;
+    }
+
+    .firstheader h1 {
+        font-size: 32px;
+    }
+
+    .firstheader p {
+        font-size: 16px;
+    }
+
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .category-item {
+        width: 45%;
+    }
+
+    .testimonial-item {
+        width: 45%;
+    }
+
+    .column {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .category-item {
+        width: 30%;
+    }
+
+    .testimonial-item {
+        width: 30%;
+    }
+
+    .column {
+        width: 25%;
+    }
+}
